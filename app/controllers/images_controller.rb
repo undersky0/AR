@@ -1,6 +1,5 @@
 class ImagesController < ApplicationController
-  before_action :set_image, only: [:show]
-
+  
   # GET /images
   # GET /images.json
   def index
@@ -15,20 +14,11 @@ class ImagesController < ApplicationController
       end
     end    
   end
-
-  # GET /images/1
-  # GET /images/1.json
-  def show
-    render json: @image
-  end
-
+  
   private
-
-    def set_image
-      @image = Image.find(params[:id])
-    end
-
-    def image_params
-      params.require(:image).permit(:image_size, :camera_angle, :stock_ref, :plate_reg, :obfuscated, :url)
-    end
+  
+  def image_params
+    params.require(:image).permit(:stock_ref, :plate_reg)
+  end
+  
 end
