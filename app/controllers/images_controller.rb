@@ -4,7 +4,7 @@ class ImagesController < ApplicationController
   # GET /images
   # GET /images.json
   def index
-    @images = Image.search(params[:stock_ref],params[:plate_reg])
+    @images = Imageserver.search(params[:stock_ref],params[:plate_reg])
     respond_to do |format|
       if @images.try(:errors)   
         format.html { flash[:error] = @images.errors.full_messages }
