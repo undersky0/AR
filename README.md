@@ -9,7 +9,11 @@ The app has both:
 It's a very simple app that gets vehicle’s registration plate and stock reference from the user and then display
 all the images available for a vehicle.
 
-The views are very simple, not even sure if it was required. A better example of web design can be found at https://github.com/undersky0/x3 ( www.undersky.co.uk ).
+The views are very simple, not even sure if they were required. A better example of web design can be found at https://github.com/undersky0/x3 ( www.undersky.co.uk ).
 The app only has one model, methods of the model have been moved to services folder. The models, methods, and controllers have been tested with rspec.
 
+
+Thank you for taking your time and considering my applicaiton for a junior developers position, I would really like to get to know more about the company and its people. 
+
+The rest of my CV can be found at: www.undersky.co.uk/home
 
