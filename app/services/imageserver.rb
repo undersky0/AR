@@ -20,6 +20,7 @@ class Imageserver
   private
   
   def self.url(stock_ref,plate_reg)
+    #creates instances, but doesn't actually save them. with a few changes it could create and save file, but it didn't seem necessary.
      images = []
       IMAGE_SIZE.each do |size|
          CAMERA_ANGLE.each do |camera|
