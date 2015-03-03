@@ -1,0 +1,18 @@
+<h5>Car image search</h5>
+<%= form_tag images_path, method: :get do %>
+	<%= label_tag "Plate Registration"%>
+	<%= search_field_tag :plate_reg, params[:plate_reg], placeholder: "plate_registration" %> 
+	<%= label_tag "Stock Reference"%>
+	<%= search_field_tag :stock_ref, params[:stock_ref], placeholder: "stock_refeference"%>  	
+	<%= submit_tag "Search", class: "btn btn-default" %>
+<%end%>
+</br>
+</br>
+
+<% if @images.kind_of?(Array) %>
+	<%@images.each do |i|%>
+	<a href=<%=i.url%>>
+		<img src=<%=i.url%> alt="Arnold Clark Default image" width="110" height="90"></img>
+	</a>
+	<%end%>
+<%end%>

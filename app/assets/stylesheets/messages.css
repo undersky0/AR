@@ -1,0 +1,20 @@
+.alert {
+	color: black;
+	position: fixed;
+	font-weight: bold;
+	width: 96%;
+	margin: 20px;
+	border: solid 1px #900;
+	padding: 3px;
+  }
+.alert.alert-error {
+	background-color: #FF6565;
+}
+.alert.alert-notice {
+	background-color: #A4E7A0;
+}
+p {
+	font-size: 110%;
+	margin: 0px 0;
+	text-align: center
+}
