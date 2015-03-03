@@ -1,7 +1,8 @@
 class Image < ActiveRecord::Base
   
   validates_presence_of :stock_ref, :plate_reg
-  validates_length_of :plate_reg, minimum: 7, maximum:8
-  #validates_format_of :plate_reg, :with => /(?<Current>^[A-Z]{2}[0-9]{2}[A-Z]{3}$)|(?<Prefix>^[A-Z][0-9]{1,3}[A-Z]{3}$)|(?<Suffix>^[A-Z]{3}[0-9]{1,3}[A-Z]$)|(?<DatelessLongNumberPrefix>^[0-9]{1,4}[A-Z]{1,2}$)|(?<DatelessShortNumberPrefix>^[0-9]{1,3}[A-Z]{1,3}$)|(?<DatelessLongNumberSuffix>^[A-Z]{1,2}[0-9]{1,4}$)|(?<DatelessShortNumberSufix>^[A-Z]{1,3}[0-9]{1,3}$)/i
+  validates_length_of :plate_reg, minimum: 7, maximum:8, message: "must be between 7-8 characters long"
+  #new style car plate registration regex
+  #validates_format_of :plate_reg, :with => /\A([A-Za-z]{2}[ ]{0,1}[0-9]{2}[ ]{0,1}[a-zA-Z]{3})\z/
 
 end

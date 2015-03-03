@@ -1,6 +1,6 @@
 class Imageserver
   
-  BASE_URI = 'http://vcache.arnoldclark.com/imageserver/' #<obfuscated-stock-reference>/<size>/<camera>
+  BASE_URI = 'http://vcache.arnoldclark.com/imageserver' #<obfuscated-stock-reference>/<size>/<camera>
   CAMERA_ANGLE = ['f','i','r','4','5','6']
   IMAGE_SIZE = ['350', '800']
   
